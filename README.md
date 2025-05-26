@@ -20,10 +20,7 @@ https://repo.llm.m5stack.com/m5stack-apt-repo jammy ax630c' \
 ```bash
 root@m5stack-LLM:~# apt update
 root@m5stack-LLM:~# apt install lib-llm
-root@m5stack-LLM:~# apt install llm-sys llm-llm llm-vlm 
-root@m5stack-LLM:~# apt install llm-whisper llm-melotts llm-openai-api
-root@m5stack-LLM:~# apt install llm-model-melotts-en-us
-root@m5stack-LLM:~# apt install llm-model-melotts-ja-jp
+root@m5stack-LLM:~# apt install llm-sys llm-llm llm-vlm  llm-whisper llm-melotts llm-openai-api llm-model-melotts-en-us llm-model-melotts-ja-jp
 root@m5stack-LLM:~# apt install ffmpeg
 root@m5stack-LLM:~# reboot
 ```
