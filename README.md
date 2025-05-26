@@ -1,5 +1,10 @@
 # ModuleLLM_MeloTTS_jp_test
 
+
+# abst
+ModuleLLMのStackFlow v1.7.0 で、MeloTTS  Japanese support が導入されました。これの評価を行いました。
+
+
 ## StackFlowをインストールする
 
 
