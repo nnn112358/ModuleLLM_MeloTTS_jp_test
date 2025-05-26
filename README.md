@@ -27,3 +27,53 @@ root@m5stack-LLM:~# apt install llm-model-melotts-ja-jp
 root@m5stack-LLM:~# apt install ffmpeg
 root@m5stack-LLM:~# reboot
 ```
+
+```
+root@m5stack-LLM:~# 
+```
+
+```
+curl -X POST "http://localhost:8000/v1/audio/speech" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "melotts-ja-jp",
+    "input": "わたしはスタックチャンです",
+    "voice": "alloy",
+    "response_format": "mp3"
+  }' \
+  --output jp_talk1.mp3
+
+curl -X POST "http://localhost:8000/v1/audio/speech" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "melotts-ja-jp",
+    "input": "おはよう、こんにちは、こんばんは",
+    "voice": "alloy",
+    "response_format": "mp3"
+  }' \
+  --output jp_talk2.mp3
+
+curl -X POST "http://localhost:8000/v1/audio/speech" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "melotts-ja-jp",
+    "input": "ありがとう、さようなら、愛しき恋人よ",
+    "voice": "alloy",
+    "response_format": "mp3"
+  }' \
+  --output jp_talk3.mp3
+
+curl -X POST "http://localhost:8000/v1/audio/speech" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "melotts-ja-jp",
+    "input": "吾輩は猫である、名前はまだない",
+    "voice": "alloy",
+    "response_format": "mp3"
+  }' \
+  --output jp_talk4.mp3
+
+```
+
+
+  
