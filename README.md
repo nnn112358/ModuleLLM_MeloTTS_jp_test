@@ -29,10 +29,10 @@ root@m5stack-LLM:~# reboot
 ```
 
 ```
-root@m5stack-LLM:~# 
+root@m5stack-LLM:~# ./test_melotts_jp.sh
 ```
 
-```
+```./test_melotts_jp.sh
 curl -X POST "http://localhost:8000/v1/audio/speech" \
   -H "Content-Type: application/json" \
   -d '{
